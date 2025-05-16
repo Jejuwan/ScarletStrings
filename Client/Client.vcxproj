@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Reference\Header\ImGuiFileDialog\ImGuiFileDialog.h" />
+    <ClInclude Include="..\Reference\Header\ImGuiFileDialog\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\GraphEditor.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\ImCurveEdit.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\ImGradient.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\ImSequencer.h" />
+    <ClInclude Include="..\Reference\Header\ImGuizmo\ImZoomSlider.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imconfig.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imgui.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imgui_internal.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imstb_textedit.h" />
+    <ClInclude Include="..\Reference\Header\ImGui\imstb_truetype.h" />
+    <ClInclude Include="..\Reference\Header\ImPlot\implot.h" />
+    <ClInclude Include="..\Reference\Header\ImPlot\implot_internal.h" />
+    <ClInclude Include="Public\ColorReverseEffect.h" />
+    <ClInclude Include="Public\DecalTargetBuffer.h" />
+    <ClInclude Include="Public\EffectInstance_ParticleLine.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_RelativeAngle.h" />
+    <ClInclude Include="Public\BrainFieldTentacle.h" />
+    <ClInclude Include="Public\CutsceneTentacle.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Turn.h" />
+    <ClInclude Include="Public\EffectRegular_VisualDetailCurve.h" />
+    <ClInclude Include="Public\ArashiAI.h" />
+    <ClInclude Include="Public\Arashi_Teammate.h" />
+    <ClInclude Include="Public\Arashi_Weapon.h" />
+    <ClInclude Include="Public\BattleField.h" />
+    <ClInclude Include="Public\Decal.h" />
+    <ClInclude Include="Public\EffectInstance_ParticlePointVectorFieldCurve.h" />
+    <ClInclude Include="Public\BattleFieldGenerator.h" />
+    <ClInclude Include="Public\HitCrackDecal.h" />
+    <ClInclude Include="Public\HPLossEffect.h" />
+    <ClInclude Include="Public\IceDecal.h" />
+    <ClInclude Include="Public\KarenCCTFilterCallBack.h" />
+    <ClInclude Include="Public\KarenControllerFilterCallBack.h" />
+    <ClInclude Include="Public\Karen_FSM.h" />
+    <ClInclude Include="Public\Loader_Hideout.h" />
+    <ClInclude Include="Public\Loader_MindRoom.h" />
+    <ClInclude Include="Public\Loader_Title.h" />
+    <ClInclude Include="Public\LoadingCharacter.h" />
+    <ClInclude Include="Public\LoadingFrame.h" />
+    <ClInclude Include="Public\LoadingLine.h" />
+    <ClInclude Include="Public\LoadingTip.h" />
+    <ClInclude Include="Public\Maptool_Create_Hideout.h" />
+    <ClInclude Include="Public\Maptool_Create_MindRoom.h" />
+    <ClInclude Include="Public\Map_Hideout_Arashi.h" />
+    <ClInclude Include="Public\Map_Hideout_Static.h" />
+    <ClInclude Include="Public\Map_Item.h" />
+    <ClInclude Include="Public\Map_MindRoom_Dynamic.h" />
+    <ClInclude Include="Public\Map_MindRoom_Neon.h" />
+    <ClInclude Include="Public\Map_MindRoom_Road.h" />
+    <ClInclude Include="Public\Map_MindRoom_Static.h" />
+    <ClInclude Include="Public\Map_ShopKeeper.h" />
+    <ClInclude Include="Public\Map_Special_Dynamic.h" />
+    <ClInclude Include="Public\BattleField_Manager.h" />
+    <ClInclude Include="Public\Loader_Suoh_Battle.h" />
+    <ClInclude Include="Public\EventCollider.h" />
+    <ClInclude Include="Public\EventColliderGenerator.h" />
+    <ClInclude Include="Public\Event_Manager.h" />
+    <ClInclude Include="Public\Map_Suoh_Bus.h" />
+    <ClInclude Include="Public\Map_Suoh_Child.h" />
+    <ClInclude Include="Public\EffectRegular_MeshAnim.h" />
+    <ClInclude Include="Public\EffectLayer.h" />
+    <ClInclude Include="Public\BattleFieldWall.h" />
+    <ClInclude Include="Public\Map_Suoh_Dynamic.h" />
+    <ClInclude Include="Public\Map_Suoh_Man.h" />
+    <ClInclude Include="Public\Map_Suoh_Neon.h" />
+    <ClInclude Include="Public\Map_Suoh_Woman.h" />
+    <ClInclude Include="Public\MenuCharacter.h" />
+    <ClInclude Include="Public\MonsterControllerFilterCallBack.h" />
+    <ClInclude Include="Public\MonsterControllerHitReport.h" />
+    <ClInclude Include="Public\Monster_FallenObject.h" />
+    <ClInclude Include="Public\Monster_Karen.h" />
+    <ClInclude Include="Public\Monster_Karen_Cloned.h" />
+    <ClInclude Include="Public\Monster_Karen_Ice.h" />
+    <ClInclude Include="Public\Monster_Statue.h" />
+    <ClInclude Include="Public\NPC_Part.h" />
+    <ClInclude Include="Public\PlayerBrainFieldCutsceneFinalState.h" />
+    <ClInclude Include="Public\PlayerBrainFieldExitState.h" />
+    <ClInclude Include="Public\PlayerBrainFieldStartState.h" />
+    <ClInclude Include="Public\PlayerBrainFieldCutsceneState.h" />
+    <ClInclude Include="Public\PlayerControllerFilterCallBack.h" />
+    <ClInclude Include="Public\EffectInstance_ParticlePointDynamicCurve.h" />
+    <ClInclude Include="Public\DispenPerrySelector_SetField.h" />
+    <ClInclude Include="Public\Map_Dynamic.h" />
+    <ClInclude Include="Public\Map_Suoh_ETC.h" />
+    <ClInclude Include="Public\Map_Suoh_Signboard.h" />
+    <ClInclude Include="Public\PlayerDriveModeState.h" />
+    <ClInclude Include="Public\PlayerFinalState.h" />
+    <ClInclude Include="Public\PlayerHealState.h" />
+    <ClInclude Include="Public\PointGizmo.h" />
+    <ClInclude Include="Public\PurpleFilterEffect.h" />
+    <ClInclude Include="Public\RedLaserEye.h" />
+    <ClInclude Include="Public\RGBShiftEffect.h" />
+    <ClInclude Include="Public\Scene_Hideout.h" />
+    <ClInclude Include="Public\Scene_MindRoom.h" />
+    <ClInclude Include="Public\ScreenEffect.h" />
+    <ClInclude Include="Public\ScreenEffectManager.h" />
+    <ClInclude Include="Public\ScreenRippleEffect.h" />
+    <ClInclude Include="Public\ShidenAI.h" />
+    <ClInclude Include="Public\Shiden_Teammate.h" />
+    <ClInclude Include="Public\Shiden_Weapon.h" />
+    <ClInclude Include="Public\SunnyFliterEffect.h" />
+    <ClInclude Include="Public\TeammageCCTFilterCallback.h" />
+    <ClInclude Include="Public\Statue_FSM.h" />
+    <ClInclude Include="Public\Teammate.h" />
+    <ClInclude Include="Public\TeammateAI.h" />
+    <ClInclude Include="Public\Scene_Suoh_Battle.h" />
+    <ClInclude Include="Public\TeammateControllerFilterCallBack.h" />
+    <ClInclude Include="Public\Teammate_Weapon.h" />
+    <ClInclude Include="Public\TestModel.h" />
+    <ClInclude Include="Public\DispenPerrySelector_LeapingBodySlam.h" />
+    <ClInclude Include="Public\DispenPerrySelector_Weak.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_WeakDown.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Weak.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_RunOnce.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_AnimationPrevent.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_Random.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_AnimationEnter.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_AnimationExit.h" />
+    <ClInclude Include="Public\DebugDecorator.h" />
+    <ClInclude Include="Public\DebugNode.h" />
+    <ClInclude Include="Public\DebugParallel.h" />
+    <ClInclude Include="Public\DebugSelector.h" />
+    <ClInclude Include="Public\DebugSequence.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_Health.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_Range.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_Repeat.h" />
+    <ClInclude Include="Public\BehaviorTreeDecorator_Skill.h" />
+    <ClInclude Include="Public\BehaviorTreeLeaf_Animation.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Chance.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Damage.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_FrontArmSwipe.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_MultiWaterShot.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_SpinningArmSwipe.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Wait.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_Walk.h" />
+    <ClInclude Include="Public\DispenPerryLeaf_WaterShot.h" />
+    <ClInclude Include="Public\CCTV.h" />
+    <ClInclude Include="Public\DispenPerryNode_Root.h" />
+    <ClInclude Include="Public\DispenPerrySelector_Hit.h" />
+    <ClInclude Include="Public\DispenPerrySelector_Phase.h" />
+    <ClInclude Include="Public\DispenPerrySelector_Phase01.h" />
+    <ClInclude Include="Public\DispenPerrySelector_Phase02.h" />
+    <ClInclude Include="Public\DispenPerrySequence_LeapingBodySlam.h" />
+    <ClInclude Include="Public\DispenPerry_BehaviorTree.h" />
+    <ClInclude Include="Public\EffectInstance_TrailLineDiffuse.h" />
+    <ClInclude Include="Public\EffectInstance_TrailQuadDiffuse.h" />
+    <ClInclude Include="Public\EffectRegular_VisualCurve.h" />
+    <ClInclude Include="Public\EffectInstance_ParticlePointCurve.h" />
+    <ClInclude Include="Public\CurveContainer.h" />
+    <ClInclude Include="Public\EffectInstance_ParticleRect.h" />
+    <ClInclude Include="Public\EffectInstance_ParticleMesh.h" />
+    <ClInclude Include="Public\CurvePlot.h" />
+    <ClInclude Include="Public\EffectRegular_VisualMesh.h" />
+    <ClInclude Include="Public\Buffalo_FSM.h" />
+    <ClInclude Include="Public\EffectInstance_ParticlePointTarget.h" />
+    <ClInclude Include="Public\FlowerChest_FSM.h" />
+    <ClInclude Include="Public\FlowerHead_FSM.h" />
+    <ClInclude Include="Public\Fly_FSM.h" />
+    <ClInclude Include="Public\EffectInstance_MeshAfterImage.h" />
+    <ClInclude Include="Public\Kagero.h" />
+    <ClInclude Include="Public\Loader_RealTest.h" />
+    <ClInclude Include="Public\Loader_Suoh.h" />
+    <ClInclude Include="Public\Loader_Test.h" />
+    <ClInclude Include="Public\Loader_Mizuha.h" />
+    <ClInclude Include="Public\Maptool_Create_Mizuha.h" />
+    <ClInclude Include="Public\Maptool_Create_Suoh.h" />
+    <ClInclude Include="Public\Maptool_Create_Tutorial.h" />
+    <ClInclude Include="Public\Map_NeonLine.h" />
+    <ClInclude Include="Public\Map_Plant.h" />
+    <ClInclude Include="Public\Map_Stage1_Building.h" />
+    <ClInclude Include="Public\Map_Stage1_Dynamic.h" />
+    <ClInclude Include="Public\Map_Stage1_Elevator.h" />
+    <ClInclude Include="Public\Map_Stage1_ETC.h" />
+    <ClInclude Include="Public\Map_Stage1_LightObject.h" />
+    <ClInclude Include="Public\Map_Stage1_Road.h" />
+    <ClInclude Include="Public\Map_Stage1_SpecialDynamic.h" />
+    <ClInclude Include="Public\Map_Stage1_Static.h" />
+    <ClInclude Include="Public\Map_Suoh_Building.h" />
+    <ClInclude Include="Public\Map_Suoh_Road.h" />
+    <ClInclude Include="Public\Map_Suoh_Static.h" />
+    <ClInclude Include="Public\Map_Wall.h" />
+    <ClInclude Include="Public\Monster.h" />
+    <ClInclude Include="Public\Camera_MapTool.h" />
+    <ClInclude Include="Public\Monster_DispenPerry.h" />
+    <ClInclude Include="Public\Monster_Projectile.h" />
+    <ClInclude Include="Public\Map_Tutorial_Dynamic.h" />
+    <ClInclude Include="Public\Map_Tutorial_Static.h" />
+    <ClInclude Include="Public\Monster_Weak.h" />
+    <ClInclude Include="Public\NoiseCloud.h" />
+    <ClInclude Include="Public\PlayerControllerHitReport.h" />
+    <ClInclude Include="Public\PlayerDodgeState.h" />
+    <ClInclude Include="Public\PlayerExecuteState.h" />
+    <ClInclude Include="Public\PlayerHurtState.h" />
+    <ClInclude Include="Public\Camera_Player.h" />
+    <ClInclude Include="Public\CutsceneCamera.h" />
+    <ClInclude Include="Public\CutsceneBuffer.h" />
+    <ClInclude Include="Public\Effect_Manager.h" />
+    <ClInclude Include="Public\Arashi.h" />
+    <ClInclude Include="Public\CameraKeyframeGenerator.h" />
+    <ClInclude Include="Public\Character.h" />
+    <ClInclude Include="Public\DebugCamera.h" />
+    <ClInclude Include="Public\EffectRegular_Distortion.h" />
+    <ClInclude Include="Public\EffectInstance_ParticlePoint.h" />
+    <ClInclude Include="Public\Client_Struct.h" />
+    <ClInclude Include="Public\EffectRegular_Visual.h" />
+    <ClInclude Include="Public\Cutscene_Mizuha.h" />
+    <ClInclude Include="Public\PlayerSpecialThrowState.h" />
+    <ClInclude Include="Public\Scene_RealTest.h" />
+    <ClInclude Include="Public\Scene_Suoh.h" />
+    <ClInclude Include="Public\Skill.h" />
+    <ClInclude Include="Public\SkillContainer.h" />
+    <ClInclude Include="Public\Part.h" />
+    <ClInclude Include="Public\Scene_Title.h" />
+    <ClInclude Include="Public\TitleBackground.h" />
+    <ClInclude Include="Public\TitleCharacter.h" />
+    <ClInclude Include="Public\TitleIcon.h" />
+    <ClInclude Include="Public\TitleLogo.h" />
+    <ClInclude Include="Public\Twince_FSM.h" />
+    <ClInclude Include="Public\UI_Indicator_Boss_Hp.h" />
+    <ClInclude Include="Public\UI_Indicator_BrainTalk_Mizuha.h" />
+    <ClInclude Include="Public\UI_Indicator_BrainTalk_Tutorial.h" />
+    <ClInclude Include="Public\UI_Indicator_Communication.h" />
+    <ClInclude Include="Public\UI_Indicator_Cursor.h" />
+    <ClInclude Include="Public\UI_Indicator_Damage_Font.h" />
+    <ClInclude Include="Public\UI_Indicator_Heal_Font.h" />
+    <ClInclude Include="Public\UI_Indicator_InstKill.h" />
+    <ClInclude Include="Public\UI_Indicator_Monster_MissPlayer.h" />
+    <ClInclude Include="Public\UI_Indicator_Script.h" />
+    <ClInclude Include="Public\UI_Indicator_SpcObjectAttack_Rock.h" />
+    <ClInclude Include="Public\UI_Indicator_SpcObjectAttack_Rotation_Beam.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Mizuha_SAS_Stealth.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Mizuha_SAS_Replication.h" />
+    <ClInclude Include="Public\UI_Indicator_Monster_Hp.h" />
+    <ClInclude Include="Public\UI_Indicator_Monster_LockOn.h" />
+    <ClInclude Include="Public\UI_Indicator_Monster_NoticeMark.h" />
+    <ClInclude Include="Public\Scene_Mizuha.h" />
+    <ClInclude Include="Public\PlayerTentacle.h" />
+    <ClInclude Include="Public\TutoBoss_FSM.h" />
+    <ClInclude Include="Public\UI_Indicator_Name_Boss.h" />
+    <ClInclude Include="Public\UI_Indicator_Name_Town.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Mizuha_SAS_Acceleration.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Mizuha_SAS_Electric.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_Kasane_SpecialAttack.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_Kasane_BattleStyle.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_PMCC.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_LockOn.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_Tips.h" />
+    <ClInclude Include="Public\UI_Indicator_ToolTip_Tutorial_Success.h" />
+    <ClInclude Include="Public\UI_Manager.h" />
+    <ClInclude Include="Public\Camera_Main.h" />
+    <ClInclude Include="Public\Gemma.h" />
+    <ClInclude Include="Public\GlobalGizmo.h" />
+    <ClInclude Include="Public\KeyframeGenerator.h" />
+    <ClInclude Include="Public\ObjectKeyframeGenerator.h" />
+    <ClInclude Include="Public\PlayerAttackState.h" />
+    <ClInclude Include="Public\Haruka.h" />
+    <ClInclude Include="Public\Kasane.h" />
+    <ClInclude Include="Public\Mizuha_Scenario.h" />
+    <ClInclude Include="Public\Naomi.h" />
+    <ClInclude Include="Public\PlayerThrowState.h" />
+    <ClInclude Include="Public\PlayerWeapon.h" />
+    <ClInclude Include="Public\Psychokinesis.h" />
+    <ClInclude Include="Public\Shiden.h" />
+    <ClInclude Include="Public\Map_TestRoad.h" />
+    <ClInclude Include="Public\Map_Tool.h" />
+    <ClInclude Include="Public\Map_ToolManager.h" />
+    <ClInclude Include="Public\Snail_FSM.h" />
+    <ClInclude Include="Public\TestBarrigate.h" />
+    <ClInclude Include="Public\TestCar.h" />
+    <ClInclude Include="Public\UI_ChangerIcon.h" />
+    <ClInclude Include="Public\Kyoka.h" />
+    <ClInclude Include="Public\Loader_Cutscene_Mizuha.h" />
+    <ClInclude Include="Public\Monster_Buffalo.h" />
+    <ClInclude Include="Public\Monster_FlowerChest.h" />
+    <ClInclude Include="Public\Monster_FlowerHead.h" />
+    <ClInclude Include="Public\Monster_Fly.h" />
+    <ClInclude Include="Public\Monster_Snail.h" />
+    <ClInclude Include="Public\Monster_TutoBoss.h" />
+    <ClInclude Include="Public\Monster_Twince.h" />
+    <ClInclude Include="Public\SimulationEventCallBack.h" />
+    <ClInclude Include="Public\Loader_MapTool.h" />
+    <ClInclude Include="Public\Map_Road.h" />
+    <ClInclude Include="Public\Scene_MapTool.h" />
+    <ClInclude Include="Public\TestAlphaBuffer.h" />
+    <ClInclude Include="Public\UI_DriveGauge.h" />
+    <ClInclude Include="Public\UI_Drive_Background.h" />
+    <ClInclude Include="Public\UI_Drive_SideGauge.h" />
+    <ClInclude Include="Public\UI_Indicator_ObjectAttack.h" />
+    <ClInclude Include="Public\UI_ItemBox.h" />
+    <ClInclude Include="Public\Loader_Tool.h" />
+    <ClInclude Include="Public\Client_Function.h" />
+    <ClInclude Include="Public\Client_Variable.h" />
+    <ClInclude Include="Public\Client_Enum.h" />
+    <ClInclude Include="Public\Client_Settings.h" />
+    <ClInclude Include="Public\Client_Define.h" />
+    <ClInclude Include="Default\Client.h" />
+    <ClInclude Include="Default\framework.h" />
+    <ClInclude Include="Default\Resource.h" />
+    <ClInclude Include="Default\targetver.h" />
+    <ClInclude Include="Public\PhysXCollider.h" />
+    <ClInclude Include="Public\Player.h" />
+    <ClInclude Include="Public\PlayerIdleState.h" />
+    <ClInclude Include="Public\PlayerJumpState.h" />
+    <ClInclude Include="Public\PlayerState.h" />
+    <ClInclude Include="Public\PlayerWalkState.h" />
+    <ClInclude Include="Public\Scene_Test.h" />
+    <ClInclude Include="Public\ImGui_Manager.h" />
+    <ClInclude Include="Public\Loader.h" />
+    <ClInclude Include="Public\MainApp.h" />
+    <ClInclude Include="Public\ClientPCH.h" />
+    <ClInclude Include="Public\Client_Animation.h" />
+    <ClInclude Include="Public\Scene_Load.h" />
+    <ClInclude Include="Public\TestSphere.h" />
+    <ClInclude Include="Public\Thread_Loader.h" />
+    <ClInclude Include="Public\Tool_Define.h" />
+    <ClInclude Include="Public\Scene_Tool.h" />
+    <ClInclude Include="Public\SkyCube.h" />
+    <ClInclude Include="Public\TestCube.h" />
+    <ClInclude Include="Public\UI_HP.h" />
+    <ClInclude Include="Public\UI_HP_Background.h" />
+    <ClInclude Include="Public\Tool_Effect.h" />
+    <ClInclude Include="Public\ToolSystem.h" />
+    <ClInclude Include="Public\UI_ItemHUD_B.h" />
+    <ClInclude Include="Public\UI_ItemHUD_L.h" />
+    <ClInclude Include="Public\UI_ItemHUD_R.h" />
+    <ClInclude Include="Public\UI_ItemTag.h" />
+    <ClInclude Include="Public\UI_Menu_Arrow_R.h" />
+    <ClInclude Include="Public\UI_Menu_Background.h" />
+    <ClInclude Include="Public\UI_Menu_Arrow_L.h" />
+    <ClInclude Include="Public\UI_Menu_Black_Background.h" />
+    <ClInclude Include="Public\UI_Menu_Button.h" />
+    <ClInclude Include="Public\UI_Menu_Category_BrainMap.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Equip.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Item.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Library.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Option.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Party.h" />
+    <ClInclude Include="Public\UI_Menu_Category_SAS.h" />
+    <ClInclude Include="Public\UI_Menu_Category_Story.h" />
+    <ClInclude Include="Public\UI_Menu_Fade_Fillter.h" />
+    <ClInclude Include="Public\UI_Menu_Fillter.h" />
+    <ClInclude Include="Public\UI_Menu_Models.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_Fillter.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_Id_Card.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_PartyLeader.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_PartyMember1.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_PartyMember2.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_PartySupport1.h" />
+    <ClInclude Include="Public\UI_Menu_Profile_PartySupport2.h" />
+    <ClInclude Include="Public\UI_Menu_Seperate_Line.h" />
+    <ClInclude Include="Public\UI_Psyco_Wave.h" />
+    <ClInclude Include="Public\UI_Shop.h" />
+    <ClInclude Include="Public\UI_Shop_Info.h" />
+    <ClInclude Include="Public\UI_Shop_Fade.h" />
+    <ClInclude Include="Public\UI_Shop_Menu.h" />
+    <ClInclude Include="Public\UI_SkillChanger.h" />
+    <ClInclude Include="Public\UI_SkillChangerKey_L.h" />
+    <ClInclude Include="Public\UI_SkillChangerKey_R.h" />
+    <ClInclude Include="Public\UI_SkillChanger_Light.h" />
+    <ClInclude Include="Public\UI_SkillSlot.h" />
+    <ClInclude Include="Public\Tool_Model.h" />
+    <ClInclude Include="Public\UI_Indicator_SpcObjectAttack.h" />
+    <ClInclude Include="Public\WaterTank.h" />
+    <ClInclude Include="Public\WaterDrop.h" />
+    <ClInclude Include="Public\Wave.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Reference\Source\ImGuiFileDialog\ImGuiFileDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGuizmo\GraphEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGuizmo\ImCurveEdit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGuizmo\ImGradient.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGuizmo\ImGuizmo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGuizmo\ImSequencer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui_draw.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui_impl_dx11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui_impl_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui_tables.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImGui\imgui_widgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImPlot\implot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImPlot\implot_demo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Reference\Source\ImPlot\implot_items.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Private\ColorReverseEffect.cpp" />
+    <ClCompile Include="Private\DecalTargetBuffer.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticleLine.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_RelativeAngle.cpp" />
+    <ClCompile Include="Private\BrainFieldTentacle.cpp" />
+    <ClCompile Include="Private\CutsceneTentacle.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Turn.cpp" />
+    <ClCompile Include="Private\EffectRegular_VisualDetailCurve.cpp" />
+    <ClCompile Include="Private\ArashiAI.cpp" />
+    <ClCompile Include="Private\Arashi_Teammate.cpp" />
+    <ClCompile Include="Private\Arashi_Weapon.cpp" />
+    <ClCompile Include="Private\Decal.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticlePointVectorFieldCurve.cpp" />
+    <ClCompile Include="Private\HitCrackDecal.cpp" />
+    <ClCompile Include="Private\HPLossEffect.cpp" />
+    <ClCompile Include="Private\IceDecal.cpp" />
+    <ClCompile Include="Private\KarenCCTFilterCallBack.cpp" />
+    <ClCompile Include="Private\KarenControllerFilterCallBack.cpp" />
+    <ClCompile Include="Private\Karen_FSM.cpp" />
+    <ClCompile Include="Private\LoadingCharacter.cpp" />
+    <ClCompile Include="Private\LoadingFrame.cpp" />
+    <ClCompile Include="Private\LoadingLine.cpp" />
+    <ClCompile Include="Private\LoadingTip.cpp" />
+    <ClCompile Include="Private\Map_Hideout_Arashi.cpp" />
+    <ClCompile Include="Private\Map_Hideout_Static.cpp" />
+    <ClCompile Include="Private\Map_Item.cpp" />
+    <ClCompile Include="Private\Map_MindRoom_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_MindRoom_Neon.cpp" />
+    <ClCompile Include="Private\Map_MindRoom_Road.cpp" />
+    <ClCompile Include="Private\Map_MindRoom_Static.cpp" />
+    <ClCompile Include="Private\Map_Shopkeeper.cpp" />
+    <ClCompile Include="Private\Map_Special_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Bus.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Child.cpp" />
+    <ClCompile Include="Private\BattleField.cpp" />
+    <ClCompile Include="Private\BattleFieldGenerator.cpp" />
+    <ClCompile Include="Private\BattleField_Manager.cpp" />
+    <ClCompile Include="Private\EventCollider.cpp" />
+    <ClCompile Include="Private\EventColliderGenerator.cpp" />
+    <ClCompile Include="Private\Event_Manager.cpp" />
+    <ClCompile Include="Private\BattleFieldWall.cpp" />
+    <ClCompile Include="Private\EffectRegular_MeshAnim.cpp" />
+    <ClCompile Include="Private\EffectLayer.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Man.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Neon.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Woman.cpp" />
+    <ClCompile Include="Private\MenuCharacter.cpp" />
+    <ClCompile Include="Private\MonsterControllerFilterCallBack.cpp" />
+    <ClCompile Include="Private\MonsterControllerHitReport.cpp" />
+    <ClCompile Include="Private\Monster_FallenObject.cpp" />
+    <ClCompile Include="Private\Monster_Karen.cpp" />
+    <ClCompile Include="Private\Monster_Karen_Cloned.cpp" />
+    <ClCompile Include="Private\Monster_Karen_Ice.cpp" />
+    <ClCompile Include="Private\Monster_Statue.cpp" />
+    <ClCompile Include="Private\NPC_Part.cpp" />
+    <ClCompile Include="Private\PlayerBrainFieldCutsceneFinalState.cpp" />
+    <ClCompile Include="Private\PlayerBrainFieldExitState.cpp" />
+    <ClCompile Include="Private\PlayerBrainFieldStartState.cpp" />
+    <ClCompile Include="Private\PlayerBrainFieldCutsceneState.cpp" />
+    <ClCompile Include="Private\PlayerControllerFilterCallBack.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticlePointDynamicCurve.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_SetField.cpp" />
+    <ClCompile Include="Private\Map_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_Suoh_ETC.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Signboard.cpp" />
+    <ClCompile Include="Private\PlayerDriveModeState.cpp" />
+    <ClCompile Include="Private\PlayerFinalState.cpp" />
+    <ClCompile Include="Private\PlayerHealState.cpp" />
+    <ClCompile Include="Private\PointGizmo.cpp" />
+    <ClCompile Include="Private\PurpleFilterEffect.cpp" />
+    <ClCompile Include="Private\RedLaserEye.cpp" />
+    <ClCompile Include="Private\RGBShiftEffect.cpp" />
+    <ClCompile Include="Private\Scene_Hideout.cpp" />
+    <ClCompile Include="Private\Scene_MindRoom.cpp" />
+    <ClCompile Include="Private\ScreenEffect.cpp" />
+    <ClCompile Include="Private\ScreenEffectManager.cpp" />
+    <ClCompile Include="Private\ScreenRippleEffect.cpp" />
+    <ClCompile Include="Private\ShidenAI.cpp" />
+    <ClCompile Include="Private\Shiden_Teammate.cpp" />
+    <ClCompile Include="Private\Shiden_Weapon.cpp" />
+    <ClCompile Include="Private\SunnyFliterEffect.cpp" />
+    <ClCompile Include="Private\TeammageCCTFilterCallback.cpp" />
+    <ClCompile Include="Private\Statue_FSM.cpp" />
+    <ClCompile Include="Private\Teammate.cpp" />
+    <ClCompile Include="Private\TeammateAI.cpp" />
+    <ClCompile Include="Private\Scene_Suoh_Battle.cpp" />
+    <ClCompile Include="Private\TeammateControllerFilterCallBack.cpp" />
+    <ClCompile Include="Private\Teammate_Weapon.cpp" />
+    <ClCompile Include="Private\TestModel.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_LeapingBodySlam.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_Weak.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_WeakDown.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Weak.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_RunOnce.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_AnimationPrevent.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_Random.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_AnimationEnter.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_AnimationExit.cpp" />
+    <ClCompile Include="Private\DebugDecorator.cpp" />
+    <ClCompile Include="Private\DebugNode.cpp" />
+    <ClCompile Include="Private\DebugParallel.cpp" />
+    <ClCompile Include="Private\DebugSelector.cpp" />
+    <ClCompile Include="Private\DebugSequence.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_Health.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_Range.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_Repeat.cpp" />
+    <ClCompile Include="Private\BehaviorTreeDecorator_Skill.cpp" />
+    <ClCompile Include="Private\BehaviorTreeLeaf_Animation.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Chance.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Damage.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_FrontArmSwipe.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_MultiWaterShot.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_SpinningArmSwipe.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Wait.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_Walk.cpp" />
+    <ClCompile Include="Private\DispenPerryLeaf_WaterShot.cpp" />
+    <ClCompile Include="Private\CCTV.cpp" />
+    <ClCompile Include="Private\DispenPerryNode_Root.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_Hit.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_Phase.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_Phase01.cpp" />
+    <ClCompile Include="Private\DispenPerrySelector_Phase02.cpp" />
+    <ClCompile Include="Private\DispenPerrySequence_LeapingBodySlam.cpp" />
+    <ClCompile Include="Private\DispenPerry_BehaviorTree.cpp" />
+    <ClCompile Include="Private\EffectInstance_TrailLineDiffuse.cpp" />
+    <ClCompile Include="Private\EffectInstance_TrailQuadDiffuse.cpp" />
+    <ClCompile Include="Private\EffectRegular_VisualCurve.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticlePointCurve.cpp" />
+    <ClCompile Include="Private\CurveContainer.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticleRect.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticleMesh.cpp" />
+    <ClCompile Include="Private\CurvePlot.cpp" />
+    <ClCompile Include="Private\EffectRegular_VisualMesh.cpp" />
+    <ClCompile Include="Private\Buffalo_FSM.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticlePointTarget.cpp" />
+    <ClCompile Include="Private\FlowerChest_FSM.cpp" />
+    <ClCompile Include="Private\FlowerHead_FSM.cpp" />
+    <ClCompile Include="Private\Fly_FSM.cpp" />
+    <ClCompile Include="Private\EffectInstance_MeshAfterImage.cpp" />
+    <ClCompile Include="Private\Kagero.cpp" />
+    <ClCompile Include="Private\Map_NeonLine.cpp" />
+    <ClCompile Include="Private\Map_Plant.cpp" />
+    <ClCompile Include="Private\Map_Stage1_Building.cpp" />
+    <ClCompile Include="Private\Map_Stage1_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_Stage1_Elevator.cpp" />
+    <ClCompile Include="Private\Map_Stage1_ETC.cpp" />
+    <ClCompile Include="Private\Map_Stage1_LightObject.cpp" />
+    <ClCompile Include="Private\Map_Stage1_Road.cpp" />
+    <ClCompile Include="Private\Map_Stage1_SpecialDynamic.cpp" />
+    <ClCompile Include="Private\Map_Stage1_Static.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Building.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Road.cpp" />
+    <ClCompile Include="Private\Map_Suoh_Static.cpp" />
+    <ClCompile Include="Private\Map_Wall.cpp" />
+    <ClCompile Include="Private\Monster.cpp" />
+    <ClCompile Include="Private\Camera_MapTool.cpp" />
+    <ClCompile Include="Private\Monster_DispenPerry.cpp" />
+    <ClCompile Include="Private\Monster_Projectile.cpp" />
+    <ClCompile Include="Private\Map_Tutorial_Dynamic.cpp" />
+    <ClCompile Include="Private\Map_Tutorial_Static.cpp" />
+    <ClCompile Include="Private\Monster_Weak.cpp" />
+    <ClCompile Include="Private\NoiseCloud.cpp" />
+    <ClCompile Include="Private\PlayerControllerHitReport.cpp" />
+    <ClCompile Include="Private\PlayerDodgeState.cpp" />
+    <ClCompile Include="Private\PlayerExecuteState.cpp" />
+    <ClCompile Include="Private\PlayerHurtState.cpp" />
+    <ClCompile Include="Private\Camera_Player.cpp" />
+    <ClCompile Include="Private\CutsceneCamera.cpp" />
+    <ClCompile Include="Private\CutsceneBuffer.cpp" />
+    <ClCompile Include="Private\Effect_Manager.cpp" />
+    <ClCompile Include="Private\Arashi.cpp" />
+    <ClCompile Include="Private\CameraKeyframeGenerator.cpp" />
+    <ClCompile Include="Private\Character.cpp" />
+    <ClCompile Include="Private\DebugCamera.cpp" />
+    <ClCompile Include="Private\EffectRegular_Distortion.cpp" />
+    <ClCompile Include="Private\EffectInstance_ParticlePoint.cpp" />
+    <ClCompile Include="Private\EffectRegular_Visual.cpp" />
+    <ClCompile Include="Private\Cutscene_Mizuha.cpp" />
+    <ClCompile Include="Private\PlayerSpecialThrowState.cpp" />
+    <ClCompile Include="Private\Scene_RealTest.cpp" />
+    <ClCompile Include="Private\Scene_Suoh.cpp" />
+    <ClCompile Include="Private\Skill.cpp" />
+    <ClCompile Include="Private\SkillContainer.cpp" />
+    <ClCompile Include="Private\Part.cpp" />
+    <ClCompile Include="Private\Scene_Title.cpp" />
+    <ClCompile Include="Private\TitleBackground.cpp" />
+    <ClCompile Include="Private\TitleCharacter.cpp" />
+    <ClCompile Include="Private\TitleIcon.cpp" />
+    <ClCompile Include="Private\TitleLogo.cpp" />
+    <ClCompile Include="Private\Twince_FSM.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Boss_Hp.cpp" />
+    <ClCompile Include="Private\UI_Indicator_BrainTalk_Mizuha.cpp" />
+    <ClCompile Include="Private\UI_Indicator_BrainTalk_Tutorial.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Communication.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Cursor.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Damage_Font.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Heal_Font.cpp" />
+    <ClCompile Include="Private\UI_Indicator_InstKill.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Monster_MissPlayer.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Script.cpp" />
+    <ClCompile Include="Private\UI_Indicator_SpcObjectAttack_Rock.cpp" />
+    <ClCompile Include="Private\UI_Indicator_SpcObjectAttack_Rotation_Beam.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Mizuha_SAS_Stealth.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Mizuha_SAS_Replication.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Monster_Hp.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Monster_LockOn.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Monster_NoticeMark.cpp" />
+    <ClCompile Include="Private\Scene_Mizuha.cpp" />
+    <ClCompile Include="Private\PlayerTentacle.cpp" />
+    <ClCompile Include="Private\TutoBoss_FSM.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Name_Boss.cpp" />
+    <ClCompile Include="Private\UI_Indicator_Name_Town.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Mizuha_SAS_Acceleration.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Mizuha_SAS_Electric.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_Kasane_SpecialAttack.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_Kasane_BattleStyle.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_PMCC.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_LockOn.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_Tips.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ToolTip_Tutorial_Success.cpp" />
+    <ClCompile Include="Private\UI_Manager.cpp" />
+    <ClCompile Include="Private\Camera_Main.cpp" />
+    <ClCompile Include="Private\Gemma.cpp" />
+    <ClCompile Include="Private\GlobalGizmo.cpp" />
+    <ClCompile Include="Private\Client_Function.cpp" />
+    <ClCompile Include="Default\Client.cpp" />
+    <ClCompile Include="Private\Haruka.cpp" />
+    <ClCompile Include="Private\ImGui_Manager.cpp" />
+    <ClCompile Include="Private\KeyframeGenerator.cpp" />
+    <ClCompile Include="Private\ObjectKeyframeGenerator.cpp" />
+    <ClCompile Include="Private\PlayerAttackState.cpp" />
+    <ClCompile Include="Private\Kasane.cpp" />
+    <ClCompile Include="Private\Mizuha_Scenario.cpp" />
+    <ClCompile Include="Private\Naomi.cpp" />
+    <ClCompile Include="Private\PlayerThrowState.cpp">
+      <FileType>CppClass</FileType>
+    </ClCompile>
+    <ClCompile Include="Private\PlayerWeapon.cpp" />
+    <ClCompile Include="Private\Psychokinesis.cpp" />
+    <ClCompile Include="Private\Shiden.cpp" />
+    <ClCompile Include="Private\Map_TestRoad.cpp" />
+    <ClCompile Include="Private\Map_Tool.cpp" />
+    <ClCompile Include="Private\Map_ToolManager.cpp" />
+    <ClCompile Include="Private\Snail_FSM.cpp" />
+    <ClCompile Include="Private\TestBarrigate.cpp" />
+    <ClCompile Include="Private\TestCar.cpp" />
+    <ClCompile Include="Private\UI_ChangerIcon.cpp" />
+    <ClCompile Include="Private\Kyoka.cpp" />
+    <ClCompile Include="Private\Monster_Buffalo.cpp" />
+    <ClCompile Include="Private\Monster_FlowerChest.cpp" />
+    <ClCompile Include="Private\Monster_FlowerHead.cpp" />
+    <ClCompile Include="Private\Monster_Fly.cpp" />
+    <ClCompile Include="Private\Monster_Snail.cpp" />
+    <ClCompile Include="Private\Monster_TutoBoss.cpp" />
+    <ClCompile Include="Private\Monster_Twince.cpp" />
+    <ClCompile Include="Private\SimulationEventCallBack.cpp" />
+    <ClCompile Include="Private\Map_Road.cpp" />
+    <ClCompile Include="Private\Scene_MapTool.cpp" />
+    <ClCompile Include="Private\TestAlphaBuffer.cpp" />
+    <ClCompile Include="Private\UI_DriveGauge.cpp" />
+    <ClCompile Include="Private\UI_Drive_Background.cpp" />
+    <ClCompile Include="Private\UI_Drive_SideGauge.cpp" />
+    <ClCompile Include="Private\UI_Indicator_ObjectAttack.cpp" />
+    <ClCompile Include="Private\UI_ItemBox.cpp" />
+    <ClCompile Include="Private\Loader.cpp" />
+    <ClCompile Include="Private\MainApp.cpp" />
+    <ClCompile Include="Private\ClientPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Private\PhysXCollider.cpp" />
+    <ClCompile Include="Private\Player.cpp" />
+    <ClCompile Include="Private\PlayerIdleState.cpp" />
+    <ClCompile Include="Private\PlayerJumpState.cpp" />
+    <ClCompile Include="Private\PlayerState.cpp" />
+    <ClCompile Include="Private\PlayerWalkState.cpp" />
+    <ClCompile Include="Private\Scene_Load.cpp" />
+    <ClCompile Include="Private\Scene_Test.cpp" />
+    <ClCompile Include="Private\Scene_Tool.cpp" />
+    <ClCompile Include="Private\SkyCube.cpp" />
+    <ClCompile Include="Private\TestCube.cpp" />
+    <ClCompile Include="Private\UI_HP.cpp" />
+    <ClCompile Include="Private\UI_HP_Background.cpp" />
+    <ClCompile Include="Private\TestSphere.cpp" />
+    <ClCompile Include="Private\Tool_Effect.cpp" />
+    <ClCompile Include="Private\UI_ItemHUD_B.cpp" />
+    <ClCompile Include="Private\UI_ItemHUD_L.cpp" />
+    <ClCompile Include="Private\UI_ItemHUD_R.cpp" />
+    <ClCompile Include="Private\UI_ItemTag.cpp" />
+    <ClCompile Include="Private\UI_Menu_Arrow_R.cpp" />
+    <ClCompile Include="Private\UI_Menu_Background.cpp" />
+    <ClCompile Include="Private\UI_Menu_Arrow_L.cpp" />
+    <ClCompile Include="Private\UI_Menu_Black_Background.cpp" />
+    <ClCompile Include="Private\UI_Menu_Button.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_BrainMap.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Equip.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Item.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Library.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Option.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Party.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_SAS.cpp" />
+    <ClCompile Include="Private\UI_Menu_Category_Story.cpp" />
+    <ClCompile Include="Private\UI_Menu_Fade_Fillter.cpp" />
+    <ClCompile Include="Private\UI_Menu_Fillter.cpp" />
+    <ClCompile Include="Private\UI_Menu_Models.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_Fillter.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_Id_Card.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_PartyLeader.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_PartyMember1.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_PartyMember2.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_PartySupport1.cpp" />
+    <ClCompile Include="Private\UI_Menu_Profile_PartySupport2.cpp" />
+    <ClCompile Include="Private\UI_Menu_Seperate_Line.cpp" />
+    <ClCompile Include="Private\UI_Psyco_Wave.cpp" />
+    <ClCompile Include="Private\UI_Shop.cpp" />
+    <ClCompile Include="Private\UI_Shop_Info.cpp" />
+    <ClCompile Include="Private\UI_Shop_Fade.cpp" />
+    <ClCompile Include="Private\UI_Shop_Menu.cpp" />
+    <ClCompile Include="Private\UI_SkillChanger.cpp" />
+    <ClCompile Include="Private\UI_SkillChangerKey_L.cpp" />
+    <ClCompile Include="Private\UI_SkillChangerKey_R.cpp" />
+    <ClCompile Include="Private\UI_SkillChanger_Light.cpp" />
+    <ClCompile Include="Private\UI_SkillSlot.cpp" />
+    <ClCompile Include="Private\Tool_Model.cpp" />
+    <ClCompile Include="Private\UI_Indicator_SpcObjectAttack.cpp" />
+    <ClCompile Include="Private\WaterTank.cpp" />
+    <ClCompile Include="Private\WaterDrop.cpp" />
+    <ClCompile Include="Private\Wave.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Default\Client.ico" />
+    <Image Include="Default\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Default\Client.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Resources\Shader\ComputeShader.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstLineVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstMeshAnimVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstMeshVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstModel.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstPointVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstRectVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosNorTanTexVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosNorTex_Decal.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTexVfx.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTex_2.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTex_Cloud.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTex_Cutscene.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTex_Loading.hlsl" />
+    <FxCompile Include="..\Resources\Shader\SkyboxPosTex.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstLine.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstMesh.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstPoint.hlsl" />
+    <FxCompile Include="..\Resources\Shader\InstRect.hlsl" />
+    <FxCompile Include="..\Resources\Shader\Pos.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosNorTanTex.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosNorTanTexBone.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosNorTex.hlsl" />
+    <FxCompile Include="..\Resources\Shader\PosTex.hlsl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9591ceb5-27df-4337-903a-0617c5fbc173}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(SolutionDir)Reference/Header/;$(SolutionDir)Reference/Header/ImGui/;$(SolutionDir)Reference/Header/ImGuizmo/;$(SolutionDir)Reference/Header/ImGuiFileDialog/;$(ProjectDir)Default/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Reference/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;ImGuid.lib;ImGuizmod.lib;ImGuiFileDialogd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"</Command>
+    </PostBuildEvent>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalIncludeDirectories>$(SolutionDir)</AdditionalIncludeDirectories>
+    </FxCompile>
+    <PreBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(SolutionDir)Reference/Header/;$(SolutionDir)Reference/Header/ImGui/;$(SolutionDir)Reference/Header/ImGuizmo/;$(SolutionDir)Reference/Header/ImGuiFileDialog/;$(ProjectDir)Default/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Reference/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"</Command>
+    </PostBuildEvent>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalIncludeDirectories>$(SolutionDir)</AdditionalIncludeDirectories>
+    </FxCompile>
+    <PreBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(SolutionDir)Reference/Header/;$(SolutionDir)Reference/Header/ImGui/;$(SolutionDir)Reference/Header/ImGuizmo/;$(SolutionDir)Reference/Header/ImGuiFileDialog/;$(SolutionDir)Reference/Header/ImPlot;$(ProjectDir)Default/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Reference/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;ImGuid.lib;ImGuizmod.lib;ImGuiFileDialogd.lib;ImPlotd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Client.bat"
+call "UpdateResources.bat" 
+call "UpdateShader.bat" 
+call "UpdateModels.bat"</Command>
+      <Message>call "UpdateResources.bat" call "UpdateShader.bat" call "UpdateModels.bat"</Message>
+    </PostBuildEvent>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalIncludeDirectories>$(SolutionDir)</AdditionalIncludeDirectories>
+    </FxCompile>
+    <PreBuildEvent />
+    <Manifest />
+    <Manifest />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(SolutionDir)Reference/Header/;$(SolutionDir)Reference/Header/ImGui/;$(SolutionDir)Reference/Header/ImGuizmo/;$(SolutionDir)Reference/Header/ImGuiFileDialog/;$(SolutionDir)Reference/Header/ImPlot/;$(ProjectDir)Default/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Reference/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Client.bat"
+call "UpdateModels.bat"
+call "UpdateResources.bat"</Command>
+    </PostBuildEvent>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalIncludeDirectories>$(SolutionDir)</AdditionalIncludeDirectories>
+    </FxCompile>
+    <PreBuildEvent />
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

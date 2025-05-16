@@ -1,0 +1,196 @@
+Camera
+5.119	-5.41	60.65
+-15	0	0
+1	1	1
+7
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Final.cin
+Mizuha_01
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Kyoka_Face.cin
+Mizuha_Kyoka
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Naomi_Face.cin
+Mizuha_Naomi
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Shiden.cin
+Mizuha_Shiden
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Kyoka_Far.cin
+Mizuha_Kyoka_Far
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Haruka_Face.cin
+Mizuha_Haruka
+Bin/Resources/Animation/CameraKeyframe/Cutscene_Mizuha_Kyoka_Talk.cin
+Mizuha_Kyoka_Talk
+Mizuha_01
+5
+0
+Bin/Resources/Animation/ObjectKeyframe/CutsceneBuffer/SmoothFar_Center_To_Right.cin
+SMOOTH_FAR_CENTER_TO_RIGHT
+0
+Bin/Resources/Animation/ObjectKeyframe/CutsceneBuffer/Smooth_Right_To_Center.cin
+SMOOTH_RIGHT_TO_CENTER
+1
+Bin/Resources/Animation/ObjectKeyframe/CutsceneBuffer/Smooth_Right_TO_Left.cin
+SMOOTH_RIGHT_TO_LEFT
+2
+Bin/Resources/Animation/ObjectKeyframe/CutsceneBuffer/Smooth_Left_TO_Right.cin
+SMOOTH_LEFT_TO_RIGHT
+3
+Bin/Resources/Animation/ObjectKeyframe/CutsceneBuffer/Smooth_Center_To_Far.cin
+SMOOTH_CENTER_TO_FAR
+6
+KYOKA
+4.94	-6.37	57.94
+0	23	0
+1	1	1
+NAOMI
+5.6	-6.415	59.385
+0	-165	0
+1	1	1
+KASANE
+6.3	-6.395	59.325
+0	-161.5	0
+1	1	1
+GEMMA
+4.555	-6.4	59.390
+0	168.5	0
+1	1	1
+SHIDEN
+5.925	-6.305	58.48
+0	-127	0
+1	1	1
+HARUKA
+1000.0	0.0	1000.0
+0	-90.0	0
+1	1	1
+15											// Scenario 갯수
+0
+
+//
+
+
+0
+SMOOTH_FAR_CENTER_TO_RIGHT
+18
+KYOKA
+쿄카/다들 모였네./
+Mizuha_Kyoka
+Non_Switch
+1
+SMOOTH_RIGHT_TO_LEFT
+21
+NAOMI
+나오미/에덴 대장. 질문을 드려도 될까요./
+Mizuha_Naomi
+Non_Switch
+2
+SMOOTH_LEFT_TO_RIGHT
+24
+KYOKA
+쿄카/어머, 나오미. 토벌군은 서로를 이름으로 부르는/관례가 있어. 그렇게 격식 차리지 말아 주겠니?
+Mizuha_Kyoka
+Non_Switch
+1
+
+30
+KYOKA
+쿄카/모두 외견과 나이가 안 맞잖아?/계급도 사무처리 때문에 있는 거고……
+Mizuha_Kyoka
+Non_Switch
+1
+
+37
+
+//
+
+Disappear_Left
+0
+
+38
+SHIDEN
+시덴/토벌군이 중시하는 것은 강함뿐이라는 거야./
+Mizuha_Shiden
+Non_Switch
+0
+SMOOTH_RIGHT_TO_CENTER
+43
+KYOKA
+쿄카/중요한 건 강함 뿐이라는 말은 별로 좋아하지/않지만, 대체로 그렇지. 그래서 질문이 뭘까?
+Mizuha_Kyoka_Far
+
+0
+
+53
+NAOMI
+나오미/네, 네에. 저, 하루카 씨가 아직 도착하지 않았어요./무슨 일이 있는 건...
+Mizuha_Naomi
+SmoothFar_Center_To_Right
+2
+SMOOTH_LEFT_TO_RIGHT
+60
+KYOKA
+쿄카/하루카는 우리 소대의 오퍼레이터란다./텔레파시로 후방에서 지원해줄 거야.
+Mizuha_Kyoka
+SMOOTH_RIGHT_TO_LEFT
+1
+SMOOTH_RIGHT_TO_LEFT
+68
+HARUKA
+하루카/들리나요? 반경 500킬로 정도는/시스템의 보조 없이도 텔라파시를 보낼 수 있어.
+Mizuha_Haruka
+NonDisapear
+3
+SMOOTH_CENTER_TO_FAR
+75
+HARUKA
+하루카/다만, 체력을 소비하니까 그룹에 들어와 줘야겠어./나오미, 카사네. 퍼스널 포트를 개방해줘.
+Mizuha_Haruka
+NonDisapear
+3
+
+82
+
+//
+
+Disappear_Left
+0
+
+83
+KYOKA
+쿄카/그럼 바로 임무를 시작할까./하루카의 유도를 받으며 정해진 골 지점으로 가줘.
+Mizuha_Kyoka_Talk
+NonDisapear
+0
+SMOOTH_RIGHT_TO_CENTER
+90
+KYOKA
+쿄카/도중에 만나는 괴이는 모두 섬멸. 단, 감당할 수/없다고 판단되면 도주를 허가합니다. 이상이야.
+Mizuha_Kyoka_Talk
+NonDisapear
+0
+
+
+// Test
+13
+NAOMI
+나오미/에덴 대장. 질문을 드려도 될까요./
+Mizuha_Naomi
+SmoothFar_Center_To_Right
+2
+SMOOTH_LEFT_TO_RIGHT
+
+// 시작시간
+// 캐릭터 이름
+// 대사
+// 카메라 태그
+// 버퍼 애니메이션 태그
+// 채널 인덱스
+// 채널 애니메이션 태그
+
+"#1	쿄카	다들 모였네.	""",,
+"#2	나오미	에덴 대장. 질문을 드려도 될까요.	""",,
+"#3	쿄카	""""어머"""," 나오미. 토벌군은 서로를 이름으로 부르는""	관례가 있어. 그렇게 격식 차리지 말아 주겠니?",
+"#4	쿄카	모두 외견과 나이가 안 맞잖아?	계급도 사무처리 때문에 있는 거고……""",,
+"#5	시덴	토벌군이 중시하는 것은 강함뿐이라는 거야.	""",,
+"#6	쿄카	중요한 건 강함 뿐이라는 말은 별로 좋아하지	""""않지만"""," 대체로 그렇지. 그래서 질문이 뭘까?""",
+"#7	나오미	""""네""", 네에. 저," 하루카 씨가 아직 도착하지 않았어요.""	무슨 일이 있는 건……"
+"#8	쿄카	하루카는 우리 소대의 오퍼레이터란다.	텔레파시로 후방에서 지원해줄 거야.""",,
+"#9	하루카	들리나요? 반경 500킬로 정도는	시스템의 보조 없이도 텔레파시를 보낼 수 있어.""",,
+"#10	하루카	""""다만"""," 체력을 소비하니까 그룹에 들어와 줘야겠어.""	""나오미"," 카사네. 퍼스널 포트를 개방해줘."""
+"#11	쿄카	그럼 바로 임무를 시작할까.	하루카의 유도를 받으며 정해진 골 지점으로 가줘.""",,

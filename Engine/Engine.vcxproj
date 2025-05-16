@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Public\ComputeAccelerator.h" />
+    <ClInclude Include="Public\Curve.h" />
+    <ClInclude Include="Public\Curves.h" />
+    <ClInclude Include="Public\Ease.h" />
+    <ClInclude Include="Public\ConstantBuffer.h" />
+    <ClInclude Include="Public\ConstantBuffer_Manager.h" />
+    <ClInclude Include="Public\Engine_Curve.h" />
+    <ClInclude Include="Public\Frustom.h" />
+    <ClInclude Include="Public\Event.h" />
+    <ClInclude Include="Public\LookUpTable.h" />
+    <ClInclude Include="Public\CinematicCamera.h" />
+    <ClInclude Include="Public\CustomFont.h" />
+    <ClInclude Include="Public\Dialogue_Manager.h" />
+    <ClInclude Include="Public\Effect.h" />
+    <ClInclude Include="Public\EffectRegular.h" />
+    <ClInclude Include="Public\Collision_Manager.h" />
+    <ClInclude Include="Public\Engine_Variable.h" />
+    <ClInclude Include="Public\EffectInstance.h" />
+    <ClInclude Include="Public\BlackBoard.h" />
+    <ClInclude Include="Public\BehaviorTree.h" />
+    <ClInclude Include="Public\Composite.h" />
+    <ClInclude Include="Public\Decorator.h" />
+    <ClInclude Include="Public\Font_Manager.h" />
+    <ClInclude Include="Public\FSM.h" />
+    <ClInclude Include="Public\GeometryGenerator.h" />
+    <ClInclude Include="Public\ImageFilter.h" />
+    <ClInclude Include="Public\ImageProcess_Manager.h" />
+    <ClInclude Include="Public\InteractiveObject.h" />
+    <ClInclude Include="Public\InteractiveObjectFinder.h" />
+    <ClInclude Include="Public\Keyframe.h" />
+    <ClInclude Include="Public\ModelRenderer.h" />
+    <ClInclude Include="Public\Node.h" />
+    <ClInclude Include="Public\Parallel.h" />
+    <ClInclude Include="Public\PhysXEngine.h" />
+    <ClInclude Include="Public\Postprocess.h" />
+    <ClInclude Include="Public\ResourceManager.h" />
+    <ClInclude Include="Public\CSound_Manager.h" />
+    <ClInclude Include="Public\SceneCapture.h" />
+    <ClInclude Include="Public\SimulationFilterCallBack.h" />
+    <ClInclude Include="Public\SSAO.h" />
+    <ClInclude Include="Public\State.h" />
+    <ClInclude Include="Public\System.h" />
+    <ClInclude Include="Public\Event_Handler.h" />
+    <ClInclude Include="Public\Animator.h" />
+    <ClInclude Include="Public\Bounding.h" />
+    <ClInclude Include="Public\Bounding_AABB.h" />
+    <ClInclude Include="Public\Bounding_OBB.h" />
+    <ClInclude Include="Public\Bounding_Sphere.h" />
+    <ClInclude Include="Public\Collider.h" />
+    <ClInclude Include="Public\DebugDraw.h" />
+    <ClInclude Include="Public\Engine_Shader.h" />
+    <ClInclude Include="Public\GraphicDevice.h" />
+    <ClInclude Include="Public\Grid_Manager.h" />
+    <ClInclude Include="Public\Grid.h" />
+    <ClInclude Include="Public\Control.h" />
+    <ClInclude Include="Public\Animation.h" />
+    <ClInclude Include="Public\Channel.h" />
+    <ClInclude Include="Public\Bone.h" />
+    <ClInclude Include="Public\Key_Manager.h" />
+    <ClInclude Include="Public\Mesh.h" />
+    <ClInclude Include="Public\Model.h" />
+    <ClInclude Include="Public\Light.h" />
+    <ClInclude Include="Public\Light_Manager.h" />
+    <ClInclude Include="Public\Mouse_Manager.h" />
+    <ClInclude Include="Public\Picker.h" />
+    <ClInclude Include="Public\HandleRAII.h" />
+    <ClInclude Include="Public\Component_Manager.h" />
+    <ClInclude Include="Public\Object_Manager.h" />
+    <ClInclude Include="Public\PipeLine.h" />
+    <ClInclude Include="Public\Camera.h" />
+    <ClInclude Include="Public\ObjectLayer.h" />
+    <ClInclude Include="Public\ObjectPool.h" />
+    <ClInclude Include="Public\Behavior.h" />
+    <ClInclude Include="Public\Component.h" />
+    <ClInclude Include="Public\Engine_Settings.h" />
+    <ClInclude Include="Public\Physics.h" />
+    <ClInclude Include="Public\Factory.h" />
+    <ClInclude Include="Public\GameObject.h" />
+    <ClInclude Include="Public\Engine_Function.h" />
+    <ClInclude Include="Public\Engine_Enum.h" />
+    <ClInclude Include="Public\Engine_Struct.h" />
+    <ClInclude Include="Public\GameInstance.h" />
+    <ClInclude Include="Public\Engine_Macro.h" />
+    <ClInclude Include="Public\Engine_Define.h" />
+    <ClInclude Include="Public\Engine_Typedef.h" />
+    <ClInclude Include="Public\EnginePCH.h" />
+    <ClInclude Include="Public\Scene_Manager.h" />
+    <ClInclude Include="Public\Scene.h" />
+    <ClInclude Include="Public\Timer.h" />
+    <ClInclude Include="Public\Timer_Manager.h" />
+    <ClInclude Include="Public\Transform.h" />
+    <ClInclude Include="Public\Renderer.h" />
+    <ClInclude Include="Public\Shader.h" />
+    <ClInclude Include="Public\Texture.h" />
+    <ClInclude Include="Public\VIBuffer.h" />
+    <ClInclude Include="Public\VIBuffer_LineList.h" />
+    <ClInclude Include="Public\VIBuffer_Rect.h" />
+    <ClInclude Include="Public\RenderTarget.h" />
+    <ClInclude Include="Public\RenderTarget_Manager.h" />
+    <ClInclude Include="Public\Selector.h" />
+    <ClInclude Include="Public\Sequence.h" />
+    <ClInclude Include="Public\VIBufferInstance.h" />
+    <ClInclude Include="Public\VIBufferInstance_Rect.h" />
+    <ClInclude Include="Public\VIBufferInstance_Point.h" />
+    <ClInclude Include="Public\VIBufferInstance_Line.h" />
+    <ClInclude Include="Public\VIBufferInstance_Mesh.h" />
+    <ClInclude Include="Public\VIBuffer_Cube.h" />
+    <ClInclude Include="Public\VIBuffer_Sphere.h" />
+    <ClInclude Include="Public\VIBufferInstance_Model.h" />
+    <ClInclude Include="Public\Spline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Private\ComputeAccelerator.cpp" />
+    <ClCompile Include="Private\Curves.cpp" />
+    <ClCompile Include="Private\Curve.cpp" />
+    <ClCompile Include="Private\Ease.cpp" />
+    <ClCompile Include="Private\CinematicCamera.cpp" />
+    <ClCompile Include="Private\ConstantBuffer.cpp" />
+    <ClCompile Include="Private\ConstantBuffer_Manager.cpp" />
+    <ClCompile Include="Private\CustomFont.cpp" />
+    <ClCompile Include="Private\Dialogue_Manager.cpp" />
+    <ClCompile Include="Private\Effect.cpp" />
+    <ClCompile Include="Private\EffectRegular.cpp" />
+    <ClCompile Include="Private\Collision_Manager.cpp" />
+    <ClCompile Include="Private\EffectInstance.cpp" />
+    <ClCompile Include="Private\BlackBoard.cpp" />
+    <ClCompile Include="Private\Event.cpp" />
+    <ClCompile Include="Private\Font_Manager.cpp" />
+    <ClCompile Include="Private\Frustom.cpp" />
+    <ClCompile Include="Private\FSM.cpp" />
+    <ClCompile Include="Private\GeometryGenerator.cpp" />
+    <ClCompile Include="Private\ImageFilter.cpp" />
+    <ClCompile Include="Private\ImageProcess_Manager.cpp" />
+    <ClCompile Include="Private\InteractiveObject.cpp" />
+    <ClCompile Include="Private\InteractiveObjectFinder.cpp" />
+    <ClCompile Include="Private\Keyframe.cpp" />
+    <ClCompile Include="Private\LookUpTable.cpp" />
+    <ClCompile Include="Private\ModelRenderer.cpp" />
+    <ClCompile Include="Private\Node.cpp" />
+    <ClCompile Include="Private\Composite.cpp" />
+    <ClCompile Include="Private\Decorator.cpp" />
+    <ClCompile Include="Private\BehaviorTree.cpp" />
+    <ClCompile Include="Private\Parallel.cpp" />
+    <ClCompile Include="Private\PhysXEngine.cpp" />
+    <ClCompile Include="Private\PipeLine.cpp" />
+    <ClCompile Include="Private\Postprocess.cpp" />
+    <ClCompile Include="Private\ResourceManager.cpp" />
+    <ClCompile Include="Private\CSound_Manager.cpp" />
+    <ClCompile Include="Private\SceneCapture.cpp" />
+    <ClCompile Include="Private\SimulationFilterCallBack.cpp" />
+    <ClCompile Include="Private\SSAO.cpp" />
+    <ClCompile Include="Private\System.cpp" />
+    <ClCompile Include="Private\Event_Handler.cpp" />
+    <ClCompile Include="Private\Animator.cpp" />
+    <ClCompile Include="Private\Bounding.cpp" />
+    <ClCompile Include="Private\Bounding_AABB.cpp" />
+    <ClCompile Include="Private\Bounding_OBB.cpp" />
+    <ClCompile Include="Private\Bounding_Sphere.cpp" />
+    <ClCompile Include="Private\Collider.cpp" />
+    <ClCompile Include="Private\DebugDraw.cpp" />
+    <ClCompile Include="Private\GraphicDevice.cpp" />
+    <ClCompile Include="Private\Grid_Manager.cpp" />
+    <ClCompile Include="Private\Grid.cpp" />
+    <ClCompile Include="Private\Control.cpp" />
+    <ClCompile Include="Private\Animation.cpp" />
+    <ClCompile Include="Private\Channel.cpp" />
+    <ClCompile Include="Private\Bone.cpp" />
+    <ClCompile Include="Private\Key_Manager.cpp" />
+    <ClCompile Include="Private\Mesh.cpp" />
+    <ClCompile Include="Private\Model.cpp" />
+    <ClCompile Include="Private\Light.cpp" />
+    <ClCompile Include="Private\Light_Manager.cpp" />
+    <ClCompile Include="Private\Mouse_Manager.cpp" />
+    <ClCompile Include="Private\Picker.cpp" />
+    <ClCompile Include="Private\Component_Manager.cpp" />
+    <ClCompile Include="Private\Engine_Header.cpp" />
+    <ClCompile Include="Private\Object_Manager.cpp" />
+    <ClCompile Include="Private\Camera.cpp" />
+    <ClCompile Include="Private\ObjectLayer.cpp" />
+    <ClCompile Include="Private\ObjectPool.cpp" />
+    <ClCompile Include="Private\Behavior.cpp" />
+    <ClCompile Include="Private\Component.cpp" />
+    <ClCompile Include="Private\Physics.cpp" />
+    <ClCompile Include="Private\GameObject.cpp" />
+    <ClCompile Include="Private\GameInstance.cpp" />
+    <ClCompile Include="Private\EnginePCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Private\Scene_Manager.cpp" />
+    <ClCompile Include="Private\Scene.cpp" />
+    <ClCompile Include="Private\Timer.cpp" />
+    <ClCompile Include="Private\Timer_Manager.cpp" />
+    <ClCompile Include="Private\Transform.cpp" />
+    <ClCompile Include="Private\Renderer.cpp" />
+    <ClCompile Include="Private\Shader.cpp" />
+    <ClCompile Include="Private\Texture.cpp" />
+    <ClCompile Include="Private\VIBuffer.cpp" />
+    <ClCompile Include="Private\VIBuffer_LineList.cpp" />
+    <ClCompile Include="Private\VIBuffer_Rect.cpp" />
+    <ClCompile Include="Private\RenderTarget.cpp" />
+    <ClCompile Include="Private\RenderTarget_Manager.cpp" />
+    <ClCompile Include="Private\Selector.cpp" />
+    <ClCompile Include="Private\Sequence.cpp" />
+    <ClCompile Include="Private\VIBufferInstance.cpp" />
+    <ClCompile Include="Private\VIBufferInstance_Rect.cpp" />
+    <ClCompile Include="Private\VIBufferInstance_Point.cpp" />
+    <ClCompile Include="Private\VIBufferInstance_Line.cpp" />
+    <ClCompile Include="Private\VIBufferInstance_Mesh.cpp" />
+    <ClCompile Include="Private\VIBuffer_Cube.cpp" />
+    <ClCompile Include="Private\VIBuffer_Sphere.cpp" />
+    <ClCompile Include="Private\VIBufferInstance_Model.cpp" />
+    <ClCompile Include="Private\Spline.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Public\BlackBoard.inl" />
+    <None Include="Public\Animator.inl" />
+    <None Include="Public\Engine_Curve.inl" />
+    <None Include="Public\Engine_Function.inl" />
+    <None Include="Public\Engine_Typedef.inl" />
+    <None Include="Public\GameObject.inl" />
+    <None Include="Resources\Shader\ShaderCommon.hlsli" />
+    <None Include="Resources\Shader\ShaderDefine.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shader\Pos.hlsl" />
+    <FxCompile Include="Resources\Shader\PosTex_Blur.hlsl" />
+    <FxCompile Include="Resources\Shader\PosTex_Deferred.hlsl" />
+    <FxCompile Include="Resources\Shader\PosTex_Lensflare.hlsl" />
+    <FxCompile Include="Resources\Shader\PosTex_Postprocess.hlsl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0decb6ea-e4ce-49e8-8e0a-2d626e5618c2}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Bin/</OutDir>
+    <IntDir>$(ProjectDir)Bin/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>EnginePCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>ThirdPartyLib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Engine.bat"
+call "UpdateLib.bat"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent />
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>EnginePCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>ThirdPartyLib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Engine.bat"
+call "UpdateLib.bat"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent />
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>EnginePCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>ThirdPartyLib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;assimp-vc143-mtd.lib;DirectXTKd.lib;Effects11d.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Engine.bat"
+call "UpdateLib.bat"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent />
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Public/Header/;$(SolutionDir)Public/Design/;$(ProjectDir)Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>EnginePCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>ThirdPartyLib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;assimp-vc143-mt.lib;DirectXTK.lib;Effects11.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent>
+      <Command>cd "$(SolutionDir)Utility/"
+call "UpdatePath_Engine.bat"
+call "UpdateLib.bat"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent />
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

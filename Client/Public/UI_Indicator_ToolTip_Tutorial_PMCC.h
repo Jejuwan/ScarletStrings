@@ -1,0 +1,128 @@
+#pragma once
+#include "Client_Define.h"
+#include "GameObject.h"
+
+BEGIN(Engine)
+class CTransform;
+class CShader;
+class CTexture;
+class CVIBuffer_Rect;
+END
+
+BEGIN(Client)
+
+class CUI_Indicator_Tooltip_Tutorial_PMCC final : public CGameObject
+{
+private:
+	explicit CUI_Indicator_Tooltip_Tutorial_PMCC(ComPtr<ID3D11Device>, ComPtr<ID3D11DeviceContext>);
+	virtual ~CUI_Indicator_Tooltip_Tutorial_PMCC() DEFAULT;
+
+public:
+	virtual HRESULT											Initialize_Prototype() override;
+	virtual HRESULT											Initialize(any _aDesc = g_aNull)	override;
+	virtual void											Tick(_float fTimeDelta) override;
+	virtual void											Late_Tick(_float fTimeDelta) override;
+	virtual HRESULT											Render() override;
+
+private:
+	virtual HRESULT											Ready_Components() override;
+
+private:
+	void													Initialize_UI();
+	void													Tick_UI(_float fTimeDelta);
+	void													Movie_System(_float fTimeDelta);
+	void													Sound(_float fTimeDelta);
+
+public:
+	void													Movie_Start();
+	void													Movie_End(_float fTimeDelta);
+
+private:
+	shared_ptr<CTransform>									m_pBackground;
+	shared_ptr<CTransform>									m_pMovie;
+	shared_ptr<CTransform>									m_pSeperate_Line1;
+	shared_ptr<CTransform>									m_pSeperate_Line2;
+
+private:
+	shared_ptr<CTransform>									m_pKey_W;
+	shared_ptr<CTransform>									m_pKey_A;
+	shared_ptr<CTransform>									m_pKey_S;
+	shared_ptr<CTransform>									m_pKey_D;
+	shared_ptr<CTransform>									m_pKey_Shift;
+	shared_ptr<CTransform>									m_pKey_ENTER;
+
+private:
+	shared_ptr<CTexture>									m_pTexture_Background;
+	shared_ptr<CTexture>									m_pTexture_Movie;
+	shared_ptr<CTexture>									m_pTexture_SeperateLine1;
+	shared_ptr<CTexture>									m_pTexture_SeperateLine2;
+
+private:
+	shared_ptr<CTexture>									m_pTexture_Key_W;
+	shared_ptr<CTexture>									m_pTexture_Key_A;
+	shared_ptr<CTexture>									m_pTexture_Key_S;
+	shared_ptr<CTexture>									m_pTexture_Key_D;
+	shared_ptr<CTexture>									m_pTexture_Key_Shift;
+	shared_ptr<CTexture>									m_pTexture_Key_ENTER;
+
+private:
+	shared_ptr<CShader>										m_pShader;
+	shared_ptr<CVIBuffer_Rect>								m_pVIBuffer_Rect;
+
+private:
+	_bool													m_bMovieStart;
+	_bool													m_bScaleUp;
+	_bool													m_bToolTip_End;
+
+private:
+	_uint													m_iSoundIndex;
+
+private:
+	_float													m_fCurrentMovieIndex;
+
+	_float													m_fMovieBackgroundTime;
+	_float													m_fMovieShaderTime;
+	_float													m_fSeperateLineTime;
+	_float													m_fScaleX_ToolTip;
+
+private:
+	_float3													m_vScale_Background;
+	_float3													m_vScale_Movie;
+	_float3													m_vScale_SeperateLine1;
+	_float3													m_vScale_SeperateLine2;
+
+private:
+	_float3													m_vScale_Key_W;
+	_float3													m_vScale_Key_A;
+	_float3													m_vScale_Key_S;
+	_float3													m_vScale_Key_D;
+	_float3													m_vScale_Key_Shift;
+	_float3													m_vScale_Key_ENTER;
+
+private:
+	_float4													m_vPosition_Background;
+	_float4													m_vPosition_Movie;
+	_float4													m_vPosition_SeperateLine1;
+	_float4													m_vPosition_SeperateLine2;
+	
+private:
+	_float4													m_vPosition_Key_W;
+	_float4													m_vPosition_Key_A;
+	_float4													m_vPosition_Key_S;
+	_float4													m_vPosition_Key_D;
+	_float4													m_vPosition_Key_Shift;
+	_float4													m_vPosition_Key_ENTER;
+
+private:
+	wstring													m_strTitle;
+	wstring													m_strExplanation1;
+	wstring													m_strExplanation2;
+	wstring													m_strExplanation3;
+	wstring													m_strEnter;
+
+public:
+	static shared_ptr<CUI_Indicator_Tooltip_Tutorial_PMCC>	Create(ComPtr<ID3D11Device>, ComPtr<ID3D11DeviceContext>);
+	virtual shared_ptr<CGameObject>							Clone(any = g_aNull) override;
+};
+
+END

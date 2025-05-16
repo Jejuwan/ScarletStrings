@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{9591CEB5-27DF-4337-903A-0617C5FBC173}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2} = {0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Header", "00. Header", "{0C5443DF-AB06-4DDE-BD6F-40194FB5D1C5}"
+	ProjectSection(SolutionItems) = preProject
+		Public\Header\Public_Define.h = Public\Header\Public_Define.h
+		Public\Header\Public_Macro.h = Public\Header\Public_Macro.h
+		Public\Header\Public_Typedef.h = Public\Header\Public_Typedef.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{F2832D67-1A78-42FC-901C-F77E424EF0F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Design", "01. Design", "{392FD607-7F77-4D3B-8D87-2ABDFBAFB739}"
+	ProjectSection(SolutionItems) = preProject
+		Public\Design\Singleton.h = Public\Design\Singleton.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B5BCC534-060C-46B2-B532-9615E20A0DBB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Item Template", "Item Template", "{F3B5D2CD-165B-43B3-A0AA-2DE3B757F2CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class Template", "Class Template", "{7D4667FF-3D37-4727-BC64-FC0F21034699}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Client Class\Form.cpp = Template\Item\Client Class\Form.cpp
+		Template\Item\Client Class\Form.h = Template\Item\Client Class\Form.h
+		Template\Item\Client Class\MyTemplate.vstemplate = Template\Item\Client Class\MyTemplate.vstemplate
+		Template\Item\Client Class\__TemplateIcon.ico = Template\Item\Client Class\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class Singleton Template", "Class Singleton Template", "{0D12E34F-312C-4694-9E2F-3BCCF9BF6EF1}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Client Singleton Class\Form.cpp = Template\Item\Client Singleton Class\Form.cpp
+		Template\Item\Client Singleton Class\Form.h = Template\Item\Client Singleton Class\Form.h
+		Template\Item\Client Singleton Class\MyTemplate.vstemplate = Template\Item\Client Singleton Class\MyTemplate.vstemplate
+		Template\Item\Client Singleton Class\__TemplateIcon.ico = Template\Item\Client Singleton Class\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine Template", "Engine Template", "{8FD8CEDF-4943-4274-ADC5-F7A95B14AC24}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Engine Class\Form.cpp = Template\Item\Engine Class\Form.cpp
+		Template\Item\Engine Class\Form.h = Template\Item\Engine Class\Form.h
+		Template\Item\Engine Class\MyTemplate.vstemplate = Template\Item\Engine Class\MyTemplate.vstemplate
+		Template\Item\Engine Class\__TemplateIcon.ico = Template\Item\Engine Class\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine Singleton Template", "Engine Singleton Template", "{4D3B2C65-3BD1-4C90-AD7C-EBF0A0DA65EF}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Engine Singleton Class\Form.cpp = Template\Item\Engine Singleton Class\Form.cpp
+		Template\Item\Engine Singleton Class\Form.h = Template\Item\Engine Singleton Class\Form.h
+		Template\Item\Engine Singleton Class\MyTemplate.vstemplate = Template\Item\Engine Singleton Class\MyTemplate.vstemplate
+		Template\Item\Engine Singleton Class\__TemplateIcon.ico = Template\Item\Engine Singleton Class\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{7D9D00BE-4603-4915-82DA-EB5360D3DCA0}"
+	ProjectSection(SolutionItems) = preProject
+		Utility\Line_Count.bat = Utility\Line_Count.bat
+		Utility\UpdateItemTemplate.bat = Utility\UpdateItemTemplate.bat
+		Utility\UpdateLib.bat = Utility\UpdateLib.bat
+		Utility\UpdatePath_Client.bat = Utility\UpdatePath_Client.bat
+		Utility\UpdatePath_Engine.bat = Utility\UpdatePath_Engine.bat
+		Utility\UpdateResources.bat = Utility\UpdateResources.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Snippet", "Code Snippet", "{9084204D-2900-450F-B5BE-B954D83E411F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Node", "00. Node", "{90B25AE0-DFD1-4F63-8AA8-84E968F5F9DC}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Behavior Tree Node\Form.cpp = Template\Item\Behavior Tree Node\Form.cpp
+		Template\Item\Behavior Tree Node\Form.h = Template\Item\Behavior Tree Node\Form.h
+		Template\Item\Behavior Tree Node\MyTemplate.vstemplate = Template\Item\Behavior Tree Node\MyTemplate.vstemplate
+		Template\Item\Behavior Tree Node\__TemplateIcon.ico = Template\Item\Behavior Tree Node\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Decorator", "01. Decorator", "{6A3C0DF7-5665-4910-A24F-2F42DD714AF5}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Behavior Tree Decorator\Form.cpp = Template\Item\Behavior Tree Decorator\Form.cpp
+		Template\Item\Behavior Tree Decorator\Form.h = Template\Item\Behavior Tree Decorator\Form.h
+		Template\Item\Behavior Tree Decorator\MyTemplate.vstemplate = Template\Item\Behavior Tree Decorator\MyTemplate.vstemplate
+		Template\Item\Behavior Tree Decorator\__TemplateIcon.ico = Template\Item\Behavior Tree Decorator\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Parallel", "02. Parallel", "{00FE50F1-17B4-4049-8577-68C11519818C}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Behavior Tree Parallel\Form.cpp = Template\Item\Behavior Tree Parallel\Form.cpp
+		Template\Item\Behavior Tree Parallel\Form.h = Template\Item\Behavior Tree Parallel\Form.h
+		Template\Item\Behavior Tree Parallel\MyTemplate.vstemplate = Template\Item\Behavior Tree Parallel\MyTemplate.vstemplate
+		Template\Item\Behavior Tree Parallel\__TemplateIcon.ico = Template\Item\Behavior Tree Parallel\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Sequence", "03. Sequence", "{FA51A210-B3E7-46F1-8BDA-756DC8726CFC}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Behavior Tree Sequence\Form.cpp = Template\Item\Behavior Tree Sequence\Form.cpp
+		Template\Item\Behavior Tree Sequence\Form.h = Template\Item\Behavior Tree Sequence\Form.h
+		Template\Item\Behavior Tree Sequence\MyTemplate.vstemplate = Template\Item\Behavior Tree Sequence\MyTemplate.vstemplate
+		Template\Item\Behavior Tree Sequence\__TemplateIcon.ico = Template\Item\Behavior Tree Sequence\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Selector", "04. Selector", "{048B4642-1B3A-4F1C-86DE-BA855D1AF180}"
+	ProjectSection(SolutionItems) = preProject
+		Template\Item\Behavior Tree Selector\Form.cpp = Template\Item\Behavior Tree Selector\Form.cpp
+		Template\Item\Behavior Tree Selector\Form.h = Template\Item\Behavior Tree Selector\Form.h
+		Template\Item\Behavior Tree Selector\MyTemplate.vstemplate = Template\Item\Behavior Tree Selector\MyTemplate.vstemplate
+		Template\Item\Behavior Tree Selector\__TemplateIcon.ico = Template\Item\Behavior Tree Selector\__TemplateIcon.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavior Tree", "Behavior Tree", "{27A196C6-C14C-45DC-A73A-E72C240E8237}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{B4761A17-E31A-48AF-A15C-97F6E882FA49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{94CBC8B4-02E6-4799-A7DD-B4F45B14FB70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Debug|x64.ActiveCfg = Debug|x64
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Debug|x64.Build.0 = Debug|x64
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Debug|x86.ActiveCfg = Debug|Win32
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Debug|x86.Build.0 = Debug|Win32
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Release|x64.ActiveCfg = Release|x64
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Release|x64.Build.0 = Release|x64
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Release|x86.ActiveCfg = Release|Win32
+		{9591CEB5-27DF-4337-903A-0617C5FBC173}.Release|x86.Build.0 = Release|Win32
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Debug|x64.ActiveCfg = Debug|x64
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Debug|x64.Build.0 = Debug|x64
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Debug|x86.ActiveCfg = Debug|Win32
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Debug|x86.Build.0 = Debug|Win32
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Release|x64.ActiveCfg = Release|x64
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Release|x64.Build.0 = Release|x64
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Release|x86.ActiveCfg = Release|Win32
+		{0DECB6EA-E4CE-49E8-8E0A-2D626E5618C2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C5443DF-AB06-4DDE-BD6F-40194FB5D1C5} = {F2832D67-1A78-42FC-901C-F77E424EF0F0}
+		{392FD607-7F77-4D3B-8D87-2ABDFBAFB739} = {F2832D67-1A78-42FC-901C-F77E424EF0F0}
+		{F3B5D2CD-165B-43B3-A0AA-2DE3B757F2CD} = {B5BCC534-060C-46B2-B532-9615E20A0DBB}
+		{7D4667FF-3D37-4727-BC64-FC0F21034699} = {B4761A17-E31A-48AF-A15C-97F6E882FA49}
+		{0D12E34F-312C-4694-9E2F-3BCCF9BF6EF1} = {B4761A17-E31A-48AF-A15C-97F6E882FA49}
+		{8FD8CEDF-4943-4274-ADC5-F7A95B14AC24} = {94CBC8B4-02E6-4799-A7DD-B4F45B14FB70}
+		{4D3B2C65-3BD1-4C90-AD7C-EBF0A0DA65EF} = {94CBC8B4-02E6-4799-A7DD-B4F45B14FB70}
+		{7D9D00BE-4603-4915-82DA-EB5360D3DCA0} = {B5BCC534-060C-46B2-B532-9615E20A0DBB}
+		{9084204D-2900-450F-B5BE-B954D83E411F} = {B5BCC534-060C-46B2-B532-9615E20A0DBB}
+		{90B25AE0-DFD1-4F63-8AA8-84E968F5F9DC} = {27A196C6-C14C-45DC-A73A-E72C240E8237}
+		{6A3C0DF7-5665-4910-A24F-2F42DD714AF5} = {27A196C6-C14C-45DC-A73A-E72C240E8237}
+		{00FE50F1-17B4-4049-8577-68C11519818C} = {27A196C6-C14C-45DC-A73A-E72C240E8237}
+		{FA51A210-B3E7-46F1-8BDA-756DC8726CFC} = {27A196C6-C14C-45DC-A73A-E72C240E8237}
+		{048B4642-1B3A-4F1C-86DE-BA855D1AF180} = {27A196C6-C14C-45DC-A73A-E72C240E8237}
+		{27A196C6-C14C-45DC-A73A-E72C240E8237} = {F3B5D2CD-165B-43B3-A0AA-2DE3B757F2CD}
+		{B4761A17-E31A-48AF-A15C-97F6E882FA49} = {F3B5D2CD-165B-43B3-A0AA-2DE3B757F2CD}
+		{94CBC8B4-02E6-4799-A7DD-B4F45B14FB70} = {F3B5D2CD-165B-43B3-A0AA-2DE3B757F2CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {496F4186-516B-4E8D-928E-F77F530E0D6F}
+	EndGlobalSection
+EndGlobal
