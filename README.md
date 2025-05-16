@@ -1,5 +1,5 @@
 # -
-Jusin 3D Team Portfolio
+3D Team Portfolio
 
 ## How to use	
 Default Directory of Templates: Documents\Visual Studio 2022\Templates\
